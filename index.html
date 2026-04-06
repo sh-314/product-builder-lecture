@@ -8,21 +8,19 @@
 </head>
 <body>
     <button id="theme-toggle" aria-label="Toggle Theme">🌓</button>
-    <div id="app" class="apple">
-        <div class="apple-stem"></div>
-        <div class="apple-leaf"></div>
-        <h1>Pomodoro Timer</h1>
-        <div id="timer-display">25:00</div>
-        <div id="time-adjust">
-            <button id="decrease-time">-</button>
-            <button id="increase-time">+</button>
-        </div>
+    <div id="app" class="tomato">
+        <div class="tomato-stem"></div>
+        <div class="tomato-body"></div>
+        <div id="status">Work Session 1/4</div>
+        <h1>Tomato Timer</h1>
+        <div id="timer-display">40:00</div>
         <div id="buttons">
             <button id="start-button">Start</button>
             <button id="pause-button">Pause</button>
             <button id="reset-button">Reset</button>
         </div>
     </div>
+    <audio id="alarm-sound" src="https://actions.google.com/sounds/v1/alarms/beep_short.ogg" preload="auto"></audio>
     <script src="main.js"></script>
 </body>
 </html>
