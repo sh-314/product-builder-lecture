@@ -72,7 +72,7 @@ body.mini-window #app {
     width: 100vw;
     height: 100vh;
     border-radius: 0;
-    padding: 10px;
+    padding: 5px;
 }
 
 body.mini-window .tomato-stem {
@@ -84,18 +84,19 @@ body.mini-window h1 {
 }
 
 body.mini-window #status {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
+    margin-bottom: 2px;
 }
 
 body.mini-window #timer-display {
-    font-size: 3rem;
-    margin: 5px 0;
+    font-size: 2.2rem;
+    margin: 2px 0;
 }
 
 body.mini-window #buttons button {
-    padding: 0.4rem 0.8rem;
-    font-size: 0.8rem;
-    margin: 0 2px;
+    padding: 0.2rem 0.5rem;
+    font-size: 0.7rem;
+    margin: 0 1px;
 }
 
 #app {
