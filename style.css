@@ -1,1 +1,131 @@
-/* Add styles here */
+:root {
+    --bg-color: #f0f0f0;
+    --text-color: #333;
+    --apple-color: #ff4d4d;
+    --apple-text: white;
+    --apple-btn-bg: rgba(255, 255, 255, 0.3);
+    --apple-btn-hover: rgba(255, 255, 255, 0.5);
+    --main-btn-bg: white;
+    --main-btn-text: #ff4d4d;
+}
+
+[data-theme="dark"] {
+    --bg-color: #1a1a1a;
+    --text-color: #f0f0f0;
+    --apple-color: #d32f2f; /* Darker red */
+}
+
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+    margin: 0;
+}
+
+#theme-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 1.5rem;
+    padding: 10px;
+    cursor: pointer;
+    background: none;
+    border: 2px solid var(--text-color);
+    border-radius: 50%;
+    color: var(--text-color);
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+#theme-toggle:hover {
+    transform: rotate(30deg);
+}
+
+#app {
+    text-align: center;
+    background-color: var(--apple-color);
+    padding: 40px;
+    border-radius: 45% 45% 50% 50%;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    position: relative;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--apple-text);
+    transition: background-color 0.3s;
+}
+
+.apple-stem {
+    width: 10px;
+    height: 30px;
+    background-color: #5d4037;
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+}
+
+.apple-leaf {
+    width: 30px;
+    height: 15px;
+    background-color: #4caf50;
+    position: absolute;
+    top: -20px;
+    left: calc(50% + 10px);
+    border-radius: 0 15px 0 15px;
+    transform: rotate(20deg);
+}
+
+h1 {
+    font-size: 1.2rem;
+    margin: 0 0 10px 0;
+}
+
+#timer-display {
+    font-size: 4rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+#time-adjust {
+    margin-bottom: 1rem;
+}
+
+#time-adjust button {
+    font-size: 1.2rem;
+    padding: 0.3rem 0.8rem;
+    margin: 0 0.3rem;
+    cursor: pointer;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--apple-btn-bg);
+    color: var(--apple-text);
+}
+
+#time-adjust button:hover {
+    background-color: var(--apple-btn-hover);
+}
+
+#buttons button {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    background-color: var(--main-btn-bg);
+    color: var(--main-btn-text);
+    font-weight: bold;
+}
+
+#buttons button:hover {
+    background-color: #f0f0f0;
+}

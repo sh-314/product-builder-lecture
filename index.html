@@ -1,14 +1,28 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hello World</title>
-  <link href='/style.css' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Hello, world!</h1>
-  <button onclick="console.log('hello');">Press me</button>
-  <script defer type="text/javascript" src="/main.js"></script>
+    <button id="theme-toggle" aria-label="Toggle Theme">🌓</button>
+    <div id="app" class="apple">
+        <div class="apple-stem"></div>
+        <div class="apple-leaf"></div>
+        <h1>Pomodoro Timer</h1>
+        <div id="timer-display">25:00</div>
+        <div id="time-adjust">
+            <button id="decrease-time">-</button>
+            <button id="increase-time">+</button>
+        </div>
+        <div id="buttons">
+            <button id="start-button">Start</button>
+            <button id="pause-button">Pause</button>
+            <button id="reset-button">Reset</button>
+        </div>
+    </div>
+    <script src="main.js"></script>
 </body>
 </html>
