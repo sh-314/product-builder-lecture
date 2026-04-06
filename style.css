@@ -27,23 +27,75 @@ body {
     margin: 0;
 }
 
-#theme-toggle {
+#controls-top {
     position: fixed;
     top: 20px;
     right: 20px;
-    font-size: 1.5rem;
-    padding: 10px;
-    cursor: pointer;
-    background: none;
-    border: 2px solid var(--text-color);
-    border-radius: 50%;
-    color: var(--text-color);
-    transition: transform 0.3s, border-color 0.3s;
+    display: flex;
+    gap: 10px;
     z-index: 100;
 }
 
-#theme-toggle:hover {
-    transform: rotate(30deg);
+#theme-toggle, #mini-toggle {
+    font-size: 1.2rem;
+    padding: 8px;
+    cursor: pointer;
+    background: white;
+    border: 2px solid var(--text-color);
+    border-radius: 50%;
+    color: var(--text-color);
+    transition: transform 0.3s, background-color 0.3s;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#theme-toggle:hover, #mini-toggle:hover {
+    transform: scale(1.1);
+    background-color: #f0f0f0;
+}
+
+/* Mini Window Styles */
+body.mini-window {
+    background-color: transparent;
+    overflow: hidden;
+}
+
+body.mini-window #controls-top {
+    display: none;
+}
+
+body.mini-window #app {
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0;
+    padding: 10px;
+}
+
+body.mini-window .tomato-stem {
+    display: none;
+}
+
+body.mini-window h1 {
+    display: none;
+}
+
+body.mini-window #status {
+    font-size: 0.7rem;
+}
+
+body.mini-window #timer-display {
+    font-size: 3rem;
+    margin: 5px 0;
+}
+
+body.mini-window #buttons button {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.8rem;
+    margin: 0 2px;
 }
 
 #app {
