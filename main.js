@@ -61,7 +61,7 @@ function toggleTheme() {
 themeToggle?.addEventListener('click', toggleTheme);
 
 miniToggle?.addEventListener('click', () => {
-    window.open(window.location.href + '?mode=mini', 'TomatoTimerMini', 'width=180,height=130,menubar=no,toolbar=no,location=no,status=no');
+    window.open(window.location.href + '?mode=mini', 'TimerMini', 'width=200,height=100,menubar=no,toolbar=no,location=no,status=no,popup=yes');
 });
 
 function updateTimerDisplay() {
