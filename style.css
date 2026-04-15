@@ -152,3 +152,71 @@ body.mini-window #timer-display {
     line-height: 1;
     letter-spacing: 0;
 }
+
+/* Partnership Form Styles */
+#partnership {
+    margin-top: 80px;
+    padding: 40px;
+    border-top: 1px solid var(--border-color);
+    width: 100%;
+    max-width: 500px;
+}
+
+#partnership h2 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.form-group textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: 1px solid var(--text-color);
+    background-color: transparent;
+    color: var(--text-color);
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.2s;
+}
+
+.submit-btn:hover {
+    background-color: var(--text-color);
+    color: var(--bg-color);
+}
+
+/* Hide partnership form in mini window */
+body.mini-window #partnership {
+    display: none;
+}

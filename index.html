@@ -10,6 +10,7 @@
 </head>
 <body>
     <div id="controls-top">
+        <button id="partnership-btn" title="Partnership Inquiry">🤝</button>
         <button id="mini-toggle" title="Open Mini Window">🗗</button>
         <button id="theme-toggle" aria-label="Toggle Theme">🌓</button>
     </div>
@@ -26,6 +27,25 @@
             <button id="reset-button">Reset</button>
             <button id="auto-toggle">Auto: ON</button>
         </div>
+        
+        <section id="partnership">
+            <h2>제휴 문의</h2>
+            <form action="https://formspree.io/f/mwvapzeg" method="POST">
+                <div class="form-group">
+                    <label for="name">이름/기업명</label>
+                    <input type="text" id="name" name="name" required placeholder="이름 또는 기업명을 입력해주세요">
+                </div>
+                <div class="form-group">
+                    <label for="email">이메일</label>
+                    <input type="email" id="email" name="_replyto" required placeholder="example@email.com">
+                </div>
+                <div class="form-group">
+                    <label for="message">문의 내용</label>
+                    <textarea id="message" name="message" required placeholder="제휴 관련 문의 내용을 상세히 적어주세요"></textarea>
+                </div>
+                <button type="submit" class="submit-btn">문의 보내기</button>
+            </form>
+        </section>
     </div>
     <audio id="alarm-sound" src="https://actions.google.com/sounds/v1/alarms/beep_short.ogg" preload="auto"></audio>
     <script src="main.js"></script>

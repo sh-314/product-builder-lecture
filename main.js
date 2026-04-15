@@ -8,6 +8,7 @@ const increaseBtn = document.getElementById('increase-time');
 const decreaseBtn = document.getElementById('decrease-time');
 const themeToggle = document.getElementById('theme-toggle');
 const miniToggle = document.getElementById('mini-toggle');
+const partnershipBtn = document.getElementById('partnership-btn');
 const alarmSound = document.getElementById('alarm-sound');
 
 let timer;
@@ -73,6 +74,11 @@ themeToggle?.addEventListener('click', toggleTheme);
 
 miniToggle?.addEventListener('click', () => {
     window.open(window.location.href + '?mode=mini', 'TimerMini', 'width=200,height=100,menubar=no,toolbar=no,location=no,status=no,popup=yes');
+});
+
+// Partnership Scroll logic
+partnershipBtn?.addEventListener('click', () => {
+    document.getElementById('partnership')?.scrollIntoView({ behavior: 'smooth' });
 });
 
 function updateTimerDisplay() {
